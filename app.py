@@ -16,6 +16,7 @@ def getNames():
 
 @app.route('/query/<string:query>/<string:collection_name>')
 def getQuery(query, collection_name):
+    print("[INFO] Inside Query")
     result = getResults(query, collection_name)
     return jsonify(result)
 

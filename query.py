@@ -5,9 +5,13 @@ import string
 
 
 def getResults(query, collection_name):
-    PATH = 'models\multi-qa-MiniLM-L6-cos-v1'
+    # PATH = 'models/multi-qa-MiniLM-L6-cos-v1'
+    PATH = 'multi-qa-MiniLM-L6-cos-v1'
     model = SentenceTransformer(PATH)
-    cross_encoder = CrossEncoder('models\ms-marco-MiniLM-L-6-v2')
+    print("[INFO] Transformer Model Loaded")
+    cross_encoder = CrossEncoder('models//ms-marco-MiniLM-L-6-v2')
+    # cross_encoder = CrossEncoder('ms-marco-MiniLM-L-6-v2')
+    print("[INFO] CrossEncoder Model Loaded")
 
     client = chromadb.PersistentClient(path="db/")
     Data_Ingestion = client.get_collection(collection_name)
@@ -17,6 +21,7 @@ def getResults(query, collection_name):
         query_embeddings = [input_em],
         n_results=15
     )
+    print("[INFO] Results Generated")
 
     semantic_res = []
     for x in results['documents']:
