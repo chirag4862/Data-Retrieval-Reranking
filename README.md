@@ -1,5 +1,20 @@
 # Data Retrieval and Reranking API
 
+<div align="center">
+<a href="https://twitter.com/jaadui_chirag" target="_blank">
+<img src=https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white alt=twitter style="margin: 0 5px 5px 0;" />
+</a>
+<a href="https://linkedin.com/in/chirag-vijay-b55b361a5" target="_blank">
+<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin: 0 5px 5px 0;" />
+</a>
+<a href="https://hashnode.com/@chirag4862" target="_blank">
+<img src=https://img.shields.io/badge/hashnode-%232962FF.svg?&style=for-the-badge&logo=hashnode&logoColor=white alt=hashnode style="margin: 0 5px 5px 0;" />
+</a>
+<a href="https://medium.com/@jaadui_chirag" target="_blank">
+<img src=https://img.shields.io/badge/medium-%23292929.svg?&style=for-the-badge&logo=medium&logoColor=white alt=medium style="margin: 0 5px 5px 0;" />
+</a>  
+</div>
+
 ## About
 
 This project provides an API for **Data Retrieval and Reranking** built using Python Flask. It allows for semantic search and retrieval of data from encoded documents stored in a vector database. The API utilizes a bi-encoder for dense retrieval and a cross-encoder for reranking to provide the most optimal search results.
